@@ -1,0 +1,69 @@
+/* Variables */
+:root {
+    --footer-column-gap: 40px; /* Espace par défaut entre les colonnes */
+}
+
+.footer {
+    background-color: #000; 
+    padding: 20px 0;
+    color: #ffcc00; 
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: var(--footer-column-gap); /* Utilise l'espacement défini par la variable */
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.footer-section span {
+    font-size: 20px;
+}
+
+/* Media Queries */
+
+/* Écrans moyens (tablette) */
+@media only screen and (max-width: 768px) {
+    :root {
+        --footer-column-gap: 15px; /* Réduit un peu l'espacement pour les écrans moyens */
+    }
+    .footer-section {
+        flex: 0 0 50%; /* Prend 50% de la largeur de l'écran */
+    }
+}
+
+/* Écrans petits (mobile) */
+@media only screen and (max-width: 480px) {
+    :root {
+        --footer-column-gap: 10px; /* Réduit davantage l'espacement pour les petits écrans */
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-section {
+        flex: 1;
+        margin-bottom: 15px;
+    }
+    .footer-section span {
+        font-size: 18px;
+    }
+}
+.footer-section h4 {
+    color: #FFFFFF; /* Couleur du texte des titres */
+    font-size: 24px; /* Taille du texte des titres */
+    margin-bottom: 10px; /* Espace sous le titre */
+    font-weight: 500; /* Épaisseur du texte des titres */
+}

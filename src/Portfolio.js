@@ -110,7 +110,7 @@ class Portfolio extends Component {
 
                       <div className="Test-page">
                       <div className="text-caroussel">
-                      <h2>Einige Bewertungen unserer Kunden</h2>
+                      <h2>Partnerschaften</h2>
                       </div>
                 <div className="section005">
                 

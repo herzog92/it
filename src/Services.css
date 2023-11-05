@@ -4,7 +4,7 @@
     --couleur-titre: rgb(14, 9, 9);
     --taille-texte: 19px;
     --taille-titre: 28px;
-    --align-texte: center
+    --align-texte: center;
     --espace-titre-texte: 0px;  /* Nouvelle variable pour l'espacement entre les titres et le texte */
 }
 

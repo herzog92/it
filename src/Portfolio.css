@@ -1,5 +1,5 @@
 .portfolio-page {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
 }
 
@@ -62,14 +62,16 @@
   color: rgba(15, 218, 232, 0.886);
   margin-left: 30px;
   margin-bottom: 10px;
-  font-size: 1em;
+  font-size: 1.2em;
   overflow: hidden;
+  line-height: 1.4;
 }
 
 .rectangle p {
   color: rgba(15, 218, 232, 0.886);
   margin-top: 0;
-  font-size: 1em;
+  font-size: 0.9em;
+  line-height: 1.8;
 }
 
 /* Section 3 */
@@ -93,15 +95,16 @@
 
 .text-area h2 {
   text-align: center;
-  font-size: 24px;
+  font-size: 1.2;
   color: rgba(15, 218, 232, 0.886);
   margin-bottom: 15px;
   margin-top: 0;
+  line-height: 1.2;
 }
 
 .text-area p {
   color: rgba(15, 218, 232, 0.886);
-  font-size: 16px;
+  font-size: 1.2;
   line-height: 1.6;
   text-align: center;
   width: 100%;
@@ -121,8 +124,8 @@
 
 .text-area003 {
   position: right;
-  background-color: rgb(238, 238, 238);
-  color: rgb(14, 9, 9);
+  background-color: rgb(207, 204, 204);
+  color: black;
   text-align: left;
   width: 350px;
   height: 350px;
@@ -136,7 +139,7 @@
 }
 
 .Test-page {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
 }
 
@@ -151,7 +154,7 @@
 .carousel-container1 {
   display: flex;
   scroll-snap-type: x mandatory;
-  width: 3000px;
+  width: 3200px;
   
 }
 
@@ -162,14 +165,16 @@
   color: rgba(15, 218, 232, 0.886);
   border-radius: 20px;
   padding: 20px;
-  width: 900px !important;
-  height: 500px !important;
+  width: 1300px !important;
+  height: 650px !important;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 .carousel-item1 p {
 color: rgba(15, 218, 232, 0.886);
+line-height: 1.4;
+font-size: 1em;
 }
 
 .carousel-item1 img {

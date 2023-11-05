@@ -226,9 +226,7 @@
         gap: 25px;
     }
 
-    .text-container, .image-container {
-        /* You might want to adjust these for large screens if the content looks too stretched */
-    }
+   
 
     .texte {
         /* Adjust the font size for large screens if necessary */

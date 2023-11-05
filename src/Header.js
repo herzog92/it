@@ -36,6 +36,8 @@ function Header() {
                         </ul>
                     </li>
                     <li><Link to="/contact" onClick={toggleMenu}>Kontakt</Link></li>
+                    <li><Link to="/Portfolio" onClick={toggleMenu}>Portfolio</Link></li>
+                   
                    
                     
                 </ul>

@@ -9,7 +9,7 @@ function Footer() {
                     <h4>Kontakt</h4>
                     <span>Email:  geschaeftsfuerung.ug@gmail.com </span>
                     <span>Postanschrift : Luitpold str 11.  92637 Weiden</span>
-                    <span>Telefonnummer:+49 176 60724034 </span>
+                    <span>Telefonnummer:+49 176 76707335 </span>
                     
                 </div>
                 <div className="footer-section">

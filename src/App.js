@@ -9,6 +9,7 @@ import Kontakt from './Kontakt.js';
 import Portfolio from './Portfolio.js';
 import Services from './Services.js';
 import Management from './Management.js';
+import Test from './Test.js';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
                         <Route path="/services" element={<Services />} />
                         <Route path="/management" element={<Management />} />
                         <Route path="/Portfolio" element={<Portfolio />} />
+                        <Route path="/Test" element={<Test />} />
                     </Routes>
                 </main>
                 <Footer />

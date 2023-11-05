@@ -11,9 +11,7 @@ function Management() {
                     <div className="overlay-text">
                         <h1>Herzlich willkommen</h1>
                         <h2>bei All-activity-group UG</h2>
-                        <p>
-                        Ihrem vertrauenswürdigen Partner für erstklassige Veranstaltungsplanung und -management. Mit uns wird jedes Event zu einem unvergesslichen Erlebnis.
-                        </p>
+                        
                     </div>
                 </div>
 

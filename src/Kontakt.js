@@ -72,7 +72,7 @@ function Kontakt() {
                         onChange={handleChange}
                     />
                     <textarea
-                        placeholder="Angebot"
+                        placeholder="Wie können wir behilflich sein?"
                         name="devis"
                         value={formData.devis}
                         onChange={handleChange}

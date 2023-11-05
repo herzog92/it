@@ -1,19 +1,21 @@
 /* Variables globales pour les styles */
 :root {
-    --couleur-texte: rgb(0, 225, 255);
-    --couleur-titre: gold;
+    --couleur-texte: rgb(0, 0, 0) !important;
+    --couleur-titre: rgb(14, 9, 9);
     --taille-texte: 19px;
     --taille-titre: 28px;
-    --align-texte: center;
-    --espace-titre-texte: 1px;  /* Nouvelle variable pour l'espacement entre les titres et le texte */
+    --align-texte: center
+    --espace-titre-texte: 0px;  /* Nouvelle variable pour l'espacement entre les titres et le texte */
 }
 
-/* Styles pour la page de service */
+/* Styles pour la page d acceuill */
 .service-page {
     font-family: Arial, sans-serif;
     padding: 0px;
-    background-color: white;
+    background-color: rgb(14, 9, 9);
     box-sizing: border-box;
+    background-size: cover;
+
 }
 
 /* Espace entre les sections */
@@ -22,7 +24,7 @@
 }
 
 /* Image de fond pour certaines sections */
-.background-section-service {
+.background-section-services {
     height: 70vh;
     background: url('image2.webp') no-repeat center center;
     background-size: cover;
@@ -31,11 +33,15 @@
     justify-content: center;
     color: white;
     padding: 1px;
+    height: 810px;
 }
 
 /* Texte au-dessus de l'image de fond */
-.overlay-text h1, .overlay-text p {
+.overlay-text1 h1, .overlay-text1 p {
     text-align: center;
+    background-color: black;
+    margin-left: 150px;
+    margin-top: -200px;
     margin-bottom: var(--espace-titre-texte); 
 }
 
@@ -43,17 +49,21 @@
 .rectangle02{
     display: flex;
     gap: 20px;
-    background-color: #000040;
+    background-color: rgb(247, 245, 245);
     color: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 70px;
-    width: 1400px;
-    margin-left: 80px;
+    width: 1000px;
+    margin-left: 50px;
+    margin-left: 50px;
+   
 }
 
 /* Inversement du texte et de l'image */
 .rectangle02.reversed {
-    flex-direction: row-reverse;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-bottom: 0px;
 }
 
 /* Styles pour les conteneurs de texte et d'image */
@@ -64,7 +74,9 @@
 /* Styles pour les images dans les sections rectangle */
 .image-container img {
     width: 100%;
+    
     height: auto;
+    margin-left: 50px;
 }
 
 /* Section avec trois boîtes côte à côte */
@@ -78,89 +90,173 @@
 /* Styles pour chaque boîte dans la section blanche */
 .box {
     flex-basis: calc(33.333% - 20px);
-    background-color:#000040;
+    background-color: rgb(247, 245, 245);
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 75px;
     margin: 40px;
+    border-radius: 70px;
 }
-
+ /*Modifier l'écart entre dans les 3 rectangles côtes à côte et le responsive design*/
 /* Styles généraux pour les textes et titres */
 .texte {
     color: var(--couleur-texte);
     font-size: var(--taille-texte);
     text-align: var(--align-texte);
-    margin-bottom: 2px; 
+    margin-bottom: 2px; /*modifie l ecart entre la section a rois rectangle et celui du haut*/
+    
 }
 
-.titre {
-    color: var(--couleur-titre);
+.titre1 {
+    margin-left: 50px;
+    color: black;
     font-size: var(--taille-titre);
     text-align: var(--align-texte);
-    margin-bottom: var(--espace-titre-texte); 
+    margin-bottom: 2px; 
 }
-
-/* Variations de styles pour les textes et titres */
-.texte.centre {
-    text-align: center;
+.titre2 {
+    margin-left: 50px;
+    color: black;
+    font-size: var(--taille-titre);
+    text-align: var(--align-texte);
+    margin-bottom: -60px; 
 }
-
-.texte.grand {
-    font-size: 20px;
+.titre3 {
+    margin-left: 50px;
+    color: black;
+    font-size: var(--taille-titre);
+    text-align: var(--align-texte);
+    margin-bottom: -60px; 
 }
-
-.titre.rouge {
-    color: red;
+.titre4 {
+    margin-left: 50px;
+    color: black;
+    font-size: var(--taille-titre);
+    text-align: var(--align-texte);
+    margin-bottom: -60px; 
+}
+.titre5 {
+    margin-left: 50px;
+    color: black;
+    font-size: var(--taille-titre);
+    text-align: var(--align-texte);
+    margin-bottom: 2px; 
 }
 
 /* Styles responsive pour les écrans plus petits */
 @media (max-width: 768px) {
-    /* Ajustements pour l'image de fond et le texte superposé */
     .background-section-service {
-        min-height: 150px;
+        height: 40vh; /* Ajuster la hauteur pour les petits écrans */
     }
-}
-    @media (max-width: 768px) {
-        .rectangle02 {
-            width: 100%; /* Ajuste la largeur pour qu'elle soit automatique */
-            margin: 0 10px; /* Ajoute une petite marge sur les côtés */
-            flex-direction: column;
-            gap: 10px; /* Réduit l'écart */
-            
-        }
+
+    .rectangle02 {
+        width: auto; /* Largeur automatique */
+        margin: 0 15px; /* Marge pour la visibilité */
+        flex-direction: column;
+        gap: 10px;
+    }
 
     .overlay-text h1 {
         font-size: 1.5rem;
     }
     
-    /* Ajustements pour les sections rectangle et blanche */
-    .rectangle02, .white-section {
+    .white-section-service {
         flex-direction: column;
     }
     
     .box {
         flex-basis: 100%;
-        margin-bottom: 15px;
+        margin: 20px 0;
     }
     
-    /* Modification de l'ordre du texte et de l'image dans la section rectangle pour les écrans plus petits */
     .rectangle02.reversed {
         flex-direction: column;
     }
-    .rectangle02.reversed .text-container {
-        order: 2;
-    }
-    .rectangle02.reversed .image-container {
-        order: 1;
+    
+    .texte, .titre {
+        text-align: left; /* Alignement du texte pour les petits écrans */
     }
 }
 
-@media (max-width: 768px) {
-    .rectangle02 .text-container {
-        flex-basis: 30%; /* Réduit l'espace pour le texte */
+/* Responsive pour très petits écrans */
+@media (max-width: 480px) {
+    .rectangle02 {
+        margin: 0 10px; /* Marge réduite */
     }
-    .rectangle02 .image-container {
-        flex-basis: 70%; /* Augmente l'espace pour l'image */
+    .white-section-service {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .box {
+        margin: 10px 0;
+        width: auto;
+        flex-basis: calc(33.333% - 20px); /* adjust the 20px if you have a different gap value */
+        margin: 10px;
+    }
+
+    .titre, .texte {
+        font-size: smaller; /* Taille de police réduite pour les très petits écrans */
     }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+   .service-page{
+    padding: 20px;
+   }
+    /* Styles spécifiques pour les tablettes et les écrans d'une certaine taille */
+}
+.rectangle02{
+    padding: 15px;
+    gap: 15px;
+}
+.box{
+    flex-basis:calc(50% - 20px) ;
+    margin:10px;
+}
+@media (min-width: 1025px) {
+    .service-page {
+        /* You might want to max out the width of the content so it doesn't stretch too wide on large screens */
+        max-width: 1200px; /* or whatever maximum width you find appropriate */
+        margin: auto; /* This will center the content if there's a max-width */
+    }
+
+    .rectangle02 {
+        /* On larger screens, you can afford more padding and larger gaps */
+        padding: 20px;
+        gap: 25px;
+    }
+
+    .text-container, .image-container {
+        /* You might want to adjust these for large screens if the content looks too stretched */
+    }
+
+    .texte {
+        /* Adjust the font size for large screens if necessary */
+        font-size: calc(var(--taille-texte) + 2px);
+    }
+
+    .titre {
+        /* Adjust the title font size for large screens if necessary */
+        font-size: calc(var(--taille-titre) + 4px);
+    }
+
+    /* For larger screens, you can display the boxes in the white-section-service side by side */
+    .white-section-service {
+        justify-content: flex-start;
+    }
+
+    .box {
+        /* On large screens, the boxes can be a bit more spaced out */
+        flex-basis: calc(33.333% - 40px); /* Adjusting for the gap */
+        margin: 20px;
+    }
+
+    /* You can also introduce hover effects for desktops as they have mouse input */
+    .box:hover {
+        /* Some hover effect */
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Any other large screen adjustments */
+}
+

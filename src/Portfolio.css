@@ -59,7 +59,7 @@
 }
 
 .rectangle h2 {
-  color: gold;
+  color: rgba(15, 218, 232, 0.886);
   margin-left: 30px;
   margin-bottom: 10px;
   font-size: 1em;
@@ -67,7 +67,7 @@
 }
 
 .rectangle p {
-  color: rgb(243, 220, 16);
+  color: rgba(15, 218, 232, 0.886);
   margin-top: 0;
   font-size: 1em;
 }
@@ -94,13 +94,13 @@
 .text-area h2 {
   text-align: center;
   font-size: 24px;
-  color: goldenrod;
+  color: rgba(15, 218, 232, 0.886);
   margin-bottom: 15px;
   margin-top: 0;
 }
 
 .text-area p {
-  color: gold;
+  color: rgba(15, 218, 232, 0.886);
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
@@ -159,7 +159,7 @@
   scroll-snap-align: start;
   margin: 15px;
   background-color: rgb(14, 9, 9) !important;
-  color: (238, 238, 238);
+  color: rgba(15, 218, 232, 0.886);
   border-radius: 20px;
   padding: 20px;
   width: 900px !important;
@@ -167,6 +167,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+.carousel-item1 p {
+color: rgba(15, 218, 232, 0.886);
 }
 
 .carousel-item1 img {
@@ -177,7 +180,7 @@
   overflow: hidden;
 }
 .text-caroussel {
-  color: rgb(14, 9, 9);
+  color: black;
   text-align: center;
 }
 

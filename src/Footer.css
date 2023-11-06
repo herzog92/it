@@ -46,7 +46,7 @@
 }
 
 /* Écrans petits (mobile) */
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 201px) and (max-width: 480px) {
     :root {
         --footer-column-gap: 10px; /* Réduit davantage l'espacement pour les petits écrans */
     }
@@ -58,7 +58,7 @@
         margin-bottom: 15px;
     }
     .footer-section span {
-        font-size: 28px;
+        font-size: 18px; /* Ajuste la taille du texte pour les petits écrans */
     }
 }
 .footer-section h4 {
@@ -75,3 +75,42 @@
         flex: 0 0 50%; /* Prend 50% de la largeur de l'écran */
     }
 }
+@media only screen and (max-width: 200px) {
+    :root {
+        --footer-column-gap: 5px; /* Espace très réduit pour les écrans très petits */
+    }
+    .footer-content {
+        padding: 0 5px;
+    }
+    .footer-section {
+        flex: 0 0 100%; /* Prend 100% de la largeur de l'écran */
+        margin-bottom: 10px;
+    }
+    .footer-section span, .footer-section h4 {
+        font-size: 16px; /* Réduit la taille du texte pour les écrans très petits */
+    }
+}
+/* ... styles existants ... */
+
+/* Écrans très larges */
+@media only screen and (min-width: 2001px) {
+    .footer-content {
+        padding: 0 30px; /* Augmenter le padding si nécessaire */
+        gap: var(--footer-column-gap); /* Vous pouvez augmenter l'espacement si nécessaire */
+    }
+
+    .footer-section {
+        /* Ajustements optionnels pour les sections, comme augmenter la taille de base */
+        flex: 0 0 calc(25% - var(--footer-column-gap)); /* Chaque section prend environ 25% de l'espace, en comptant l'espacement */
+    }
+
+    .footer-section h4 {
+        font-size: 36px; /* Augmenter la taille de la police pour les grands écrans */
+    }
+
+    .footer-section span {
+        font-size: 24px; /* Augmenter la taille de la police pour les grands écrans */
+    }
+}
+
+/* ... autres requêtes médias ... */

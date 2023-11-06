@@ -59,7 +59,7 @@
 }
 
 .rectangle h2 {
-  color: rgba(15, 218, 232, 0.886);
+  color: goldenrod;
   margin-left: 30px;
   margin-bottom: 10px;
   font-size: 1.2em;
@@ -68,7 +68,7 @@
 }
 
 .rectangle p {
-  color: rgba(15, 218, 232, 0.886);
+  color: #0fa6ec;
   margin-top: 0;
   font-size: 0.9em;
   line-height: 1.8;
@@ -96,14 +96,14 @@
 .text-area h2 {
   text-align: center;
   font-size: 1.2;
-  color: rgba(15, 218, 232, 0.886);
+  color: gold;
   margin-bottom: 15px;
   margin-top: 0;
   line-height: 1.2;
 }
 
 .text-area p {
-  color: rgba(15, 218, 232, 0.886);
+  color: #0fa6ec;
   font-size: 1.2;
   line-height: 1.6;
   text-align: center;
@@ -111,13 +111,14 @@
 }
 
 .section003 {
+  background-color: rgb(207, 204, 204);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
   overflow: hidden;
-  margin-right: 30px;
-  text-align: center;
+  margin-left: 30px;
+  text-align: Left;
   margin: 20px;
   
 }
@@ -127,8 +128,9 @@
   background-color: rgb(207, 204, 204);
   color: black;
   text-align: left;
-  width: 350px;
-  height: 350px;
+  width: 270px;
+  height: 180px;
+  margin-right: 180px;
 }
 
 .image-area {
@@ -162,7 +164,7 @@
   scroll-snap-align: start;
   margin: 15px;
   background-color: rgb(14, 9, 9) !important;
-  color: rgba(15, 218, 232, 0.886);
+  color: goldenrod;
   border-radius: 20px;
   padding: 20px;
   width: 1300px !important;
@@ -172,7 +174,7 @@
   justify-content: center;
 }
 .carousel-item1 p {
-color: rgba(15, 218, 232, 0.886);
+color: #0fa6ec;
 line-height: 1.4;
 font-size: 1em;
 }

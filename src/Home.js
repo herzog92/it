@@ -43,8 +43,8 @@ function Home() {
 
             <div className="section section5">
                 <div className="section5-text">
-                    <h2>Ihr Partner für gelungene Veranstaltungen</h2>
-                    Erfahren Sie, wie All-Activity-Group als Ihr Partner für Gastronomie- und Einzelhandelsservices zum Erfolg Ihrer Veranstaltungen beiträgt.
+                    <h2>Ihr Partner für gelungene </h2><h2>Veranstaltungen</h2>
+                   <h2> Erfahren Sie, wie All-Activity-Group </h2><h2>als Ihr Partner für Gastronomie- und </h2> <h2>Einzelhandelsservices zum Erfolg</h2> <h2> Ihrer Veranstaltungen beiträgt.</h2>
                 </div>
             </div>
 

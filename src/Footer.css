@@ -6,7 +6,7 @@
 .footer {
     background-color: #000; 
     padding: 20px 0;
-    color: #ffcc00; 
+    color: #0fa6ec; 
     font-family: Arial, sans-serif;
 }
 
@@ -58,11 +58,11 @@
         margin-bottom: 15px;
     }
     .footer-section span {
-        font-size: 18px;
+        font-size: 28px;
     }
 }
 .footer-section h4 {
-    color: #FFFFFF; /* Couleur du texte des titres */
+    color: goldenrod; /* Couleur du texte des titres */
     font-size: 24px; /* Taille du texte des titres */
     margin-bottom: 10px; /* Espace sous le titre */
     font-weight: 500; /* Épaisseur du texte des titres */

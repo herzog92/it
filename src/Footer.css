@@ -67,3 +67,11 @@
     margin-bottom: 10px; /* Espace sous le titre */
     font-weight: 500; /* Épaisseur du texte des titres */
 }
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    :root {
+        --footer-column-gap: 15px; /* Réduit un peu l'espacement pour les écrans moyens */
+    }
+    .footer-section {
+        flex: 0 0 50%; /* Prend 50% de la largeur de l'écran */
+    }
+}

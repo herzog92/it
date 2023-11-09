@@ -7,7 +7,7 @@ function Service() {
             {/* Section 1 */}
             <div className="section background-section-services">
                 <div className="overlay-text1">
-                    <h1 className="titre centre">Willkommen bei All-activity-group UG</h1>
+                    <h1 className="titre centre">Willkommen bei All-activity-group </h1>
                 </div>
             </div>
 

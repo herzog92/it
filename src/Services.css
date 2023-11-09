@@ -4,7 +4,7 @@
     --couleur-titre: rgb(14, 9, 9);
     --taille-texte: 19px;
     --taille-titre: 28px;
-    --align-texte: center;
+    --align-texte: left;
     --espace-titre-texte: 0px;  /* Nouvelle variable pour l'espacement entre les titres et le texte */
 }
 
@@ -55,7 +55,7 @@
     border-radius: 70px;
     width: 1000px;
     margin-left: 50px;
-    margin-left: 50px;
+    
    
 }
 
@@ -63,7 +63,7 @@
 .rectangle02.reversed {
     flex-direction: row;
     margin-left: 50px;
-    margin-bottom: 0px;
+    
 }
 
 /* Styles pour les conteneurs de texte et d'image */
@@ -74,7 +74,6 @@
 /* Styles pour les images dans les sections rectangle */
 .image-container img {
     width: 100%;
-    
     height: auto;
     margin-left: 50px;
 }
@@ -114,6 +113,8 @@
     font-size: var(--taille-titre);
     text-align: var(--align-texte);
     margin-bottom: 2px; 
+    line-height: 1.4;
+    
 }
 .titre2 {
     margin-left: 50px;
@@ -137,7 +138,7 @@
     margin-bottom: -60px; 
 }
 .titre5 {
-    margin-left: 50px;
+    margin-left: 51px;
     color: black;
     font-size: var(--taille-titre);
     text-align: var(--align-texte);

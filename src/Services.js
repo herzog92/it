@@ -14,7 +14,7 @@ function Service() {
             {/* Section 2 */}
             <div className="section rectangle02">
                 <div className="text-container">
-                    <h3 className="titre1">Vollumfänglicher Service mit Eigenverantwortung</h3>
+                    <h3 className="titre1">Vollumfänglicher Service und Verkauf mit Eigenverantwortung</h3>
                     <p className="texte">Wir möchten darauf hinweisen, dass unsere Dienstleistungen ausschließlich auf der Basis von Eigenverantwortung und Vollständigkeit der übernommenen Bereiche angeboten werden. Unser Ansatz besteht darin, komplette Servicebereiche zu managen, anstatt lediglich Personal zur Verfügung zu stellen.</p>
                 </div>
                 <div className="image-container">

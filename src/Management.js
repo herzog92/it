@@ -10,7 +10,7 @@ function Management() {
                 <div className="background-section-Management">
                     <div className="overlay-text">
                         <h1>Herzlich willkommen</h1>
-                        <h2>bei All-activity-group UG</h2>
+                        <h2>bei All-activity-group </h2>
                         
                     </div>
                 </div>
@@ -34,11 +34,11 @@ function Management() {
                 </div>
 
                 <div className="section-4">
-                    <h1>Erfolgreiches Eventmanagement mit All-activity-group UG</h1>
+                    <h1>Erfolgreiches Eventmanagement mit All-activity-group </h1>
                     <p>
                     In der Welt der Veranstaltungen ist das richtige Management der
                      Schlüssel zum Erfolg.
-                      Bei All-activity-group UG vereinen wir Fachwissen mit
+                      Bei All-activity-group  vereinen wir Fachwissen mit
                        Leidenschaft, um jedes Event in ein unvergessliches Erlebnis 
                        zu verwandeln. Unsere langjährige Erfahrung ermöglicht es uns, auf die feinsten Details zu achten und gleichzeitig den großen Überblick zu behalten. Von der Konzeption bis zur Umsetzung, unsere Experten begleiten Sie in jeder Phase, um sicherzustellen, dass Ihre Veranstaltung nicht nur den Erwartungen entspricht, sondern diese übertrifft. Vertrauen Sie auf unser Engagement und unsere Expertise für Ihr nächstes Event.
                     </p>

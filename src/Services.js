@@ -29,7 +29,7 @@ function Service() {
                     <p className="texte">Wir bieten die komplette Übernahme des Servicebereichs bei Veranstaltungen für 20 bis 500 Personen. Unsere professionellen Bankett-Servicekräfte sind spezialisiert auf die Betreuung und das Management von Großveranstaltungen. Bei einer kürzlich organisierten Firmenfeier mit 500 Gästen haben wir 20 hochqualifizierte Servicekräfte gestellt. Diese Veranstaltung wurde von einem externen Anbieter ausgerichtet und hat unsere Fähigkeit zur effektiven Arbeit im großen Maßstab erfolgreich demonstriert.</p>
                 </div>
                 <div className="box">
-                    <h4 className="titre3">Umfassender Auf- und Abbau des Buffets</h4>
+                    <h4 className="titre3">Professionelle Eventorganisation und Gastronomieservice</h4>
                     <p className="texte">Wir bieten umfassende Eventorganisation für Biergärten, Winterhütten, Verkaufsstände und mehr. Unser Service umfasst die vollständige Betreuung der Veranstaltungsorte sowie den Auf- und Abbau des Buffets, inklusive Geschirrspülung. Unser geschultes Personal ist darauf spezialisiert, für reibungslose Abläufe und exzellenten Service zu sorgen. Vertrauen Sie uns, wenn Ihnen das Personal fehlt, und garantieren Sie den Erfolg Ihrer Veranstaltung.</p>
                 </div>
                 <div className="box">

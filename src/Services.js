@@ -25,7 +25,7 @@ function Service() {
             {/* Section 3 */}
             <div className="section white-section">
                 <div className="box">
-                    <h4 className="titre2">Professionelle Bankett-Servicekräfte für Großveranstaltungen</h4>
+                    <h4 className="titre2">Professionelle Eventbetreuung für Großveranstaltungen</h4>
                     <p className="texte">Wir bieten die komplette Übernahme des Servicebereichs bei Veranstaltungen für 20 bis 500 Personen. Unsere professionellen Bankett-Servicekräfte sind spezialisiert auf die Betreuung und das Management von Großveranstaltungen. Bei einer kürzlich organisierten Firmenfeier mit 500 Gästen haben wir 20 hochqualifizierte Servicekräfte gestellt. Diese Veranstaltung wurde von einem externen Anbieter ausgerichtet und hat unsere Fähigkeit zur effektiven Arbeit im großen Maßstab erfolgreich demonstriert.</p>
                 </div>
                 <div className="box">

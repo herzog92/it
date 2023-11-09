@@ -26,15 +26,15 @@ function Service() {
             <div className="section white-section">
                 <div className="box">
                     <h4 className="titre2">Professionelle Bankett-Servicekräfte für Großveranstaltungen</h4>
-                    <p className="texte">Unsere erfahrenen Bankett-Servicekräfte sind spezialisiert auf die Bedienung und das Management von Großveranstaltungen. Bei einer kürzlich organisierten Firmenfeier mit 500 Gästen haben wir 20 top-geschulte Servicekräfte bereitgestellt. Diese Veranstaltung wurde von einem externen Anbieter organisiert und demonstrierte unsere Fähigkeit, effektiv in großem Umfang zu arbeiten.</p>
+                    <p className="texte">Wir bieten die komplette Übernahme des Servicebereichs bei Veranstaltungen für 20 bis 500 Personen. Unsere professionellen Bankett-Servicekräfte sind spezialisiert auf die Betreuung und das Management von Großveranstaltungen. Bei einer kürzlich organisierten Firmenfeier mit 500 Gästen haben wir 20 hochqualifizierte Servicekräfte gestellt. Diese Veranstaltung wurde von einem externen Anbieter ausgerichtet und hat unsere Fähigkeit zur effektiven Arbeit im großen Maßstab erfolgreich demonstriert.</p>
                 </div>
                 <div className="box">
                     <h4 className="titre3">Umfassender Auf- und Abbau des Buffets</h4>
-                    <p className="texte">Der Service beinhaltete den kompletten Aufbau sowie den Abbau des Buffets, das vom Veranstalter geliefert wurde. Unsere Servicekräfte haben sich um alle Aspekte des Buffet-Managements gekümmert, um eine ansprechende Präsentation und reibungslose Abläufe zu gewährleisten. Ebenso wurde das Geschirr, zur Verfügung gestellt vom Anbieter, nach der Veranstaltung von unseren Kräften abgeräumt und gespült..</p>
+                    <p className="texte">Wir bieten umfassende Eventorganisation für Biergärten, Winterhütten, Verkaufsstände und mehr. Unser Service umfasst die vollständige Betreuung der Veranstaltungsorte sowie den Auf- und Abbau des Buffets, inklusive Geschirrspülung. Unser geschultes Personal ist darauf spezialisiert, für reibungslose Abläufe und exzellenten Service zu sorgen. Vertrauen Sie uns, wenn Ihnen das Personal fehlt, und garantieren Sie den Erfolg Ihrer Veranstaltung.</p>
                 </div>
                 <div className="box">
                     <h4 className="titre4">Hervorragende Gästebetreuung</h4>
-                    <p className="texte">Ein wesentlicher Bestandteil unseres Services ist die Gewährleistung eines reibungslosen Veranstaltungsablaufs und die freundliche Bedienung aller Gäste. Unsere Servicekräfte sind darauf trainiert, auf die Bedürfnisse jedes Gastes einzugehen und einen exzellenten Service zu bieten, der den Erfolg Ihrer Veranstaltung sicherstellt.</p>
+                    <p className="texte">Unsere Servicekräfte sind darauf trainiert, auf die Bedürfnisse jedes Gastes einzugehen und einen exzellenten Service zu bieten. Wir übernehmen alles für den Kunden und gehen dabei so vor, wie es jeder Kunde selbst tun würde. Unser Ziel ist immer 100% Kundenzufriedenheit und wir handeln im Namen des Kunden, um den Erfolg Ihrer Veranstaltung sicherzustellen.</p>
                 </div>
             </div>
 

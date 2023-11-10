@@ -7,7 +7,7 @@ function Footer() {
             <div className="footer-content">
                 <div className="footer-section">
                     <h4>Kontakt</h4>
-                    <span>Email:  geschaeftsfuerung.ug@gmail.com </span>
+                    <span>Email:  kontakt@all-activity-group.de </span>
                     <span>Postanschrift : Luitpold str 11.  92637 Weiden</span>
                     <span>Telefonnummer:+49 176 76707335 </span>
                     

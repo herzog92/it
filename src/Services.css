@@ -49,8 +49,8 @@
 .rectangle02{
     display: flex;
     gap: 20px;
-    background-color: rgb(247, 245, 245);
-    color: white;
+    background-color: rgb(244, 240, 240);
+    color: black;
     padding: 10px;
     border-radius: 70px;
     width: 1000px;

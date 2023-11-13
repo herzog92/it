@@ -61,7 +61,7 @@
 .section4 img {
     flex: 0 0 calc(25% - 10px);
     max-width: calc(25% - 10px);
-    height: 250px;
+    height: 350px;
     margin-right: 10px;
     object-fit: cover;
 }

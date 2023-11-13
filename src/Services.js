@@ -18,7 +18,7 @@ function Service() {
                     <p className="texte">Wir möchten darauf hinweisen, dass unsere Dienstleistungen ausschließlich auf der Basis von Eigenverantwortung und Vollständigkeit der übernommenen Bereiche angeboten werden. Unser Ansatz besteht darin, komplette Servicebereiche zu managen, anstatt lediglich Personal zur Verfügung zu stellen.</p>
                 </div>
                 <div className="image-container">
-                    <img src="image9.webp" alt="Service" />
+                    <img src="image02.webp" alt="Service" />
                 </div>
             </div>
 
@@ -45,7 +45,7 @@ function Service() {
                     <p className="texte">In allem, was wir tun, steht die Leidenschaft im Mittelpunkt. Dieses brennende Verlangen, stets das Beste zu geben, treibt uns an, kontinuierlich zu lernen, uns zu verbessern und innovative Lösungen zu finden. Für uns ist jede Veranstaltung einzigartig, und wir behandeln sie mit dem Respekt und der Sorgfalt, die sie verdient. Denn in unserem Geschäft geht es nicht nur darum, Essen und Getränke zu servieren, sondern Erinnerungen zu schaffen, die ein Leben lang halten</p>
                 </div>
                 <div className="image-container">
-                    <img src="image8.webp" alt="Service" />
+                    <img src="image03.webp" alt="Service" />
                 </div>
             </div>
         </div>

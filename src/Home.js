@@ -4,6 +4,8 @@ import './Home.css';
 function Home() {
     const imageSources = [
         "/image4.webp",
+        "/image01.webp",
+        "/image03.webp",
         "/image17.webp",
         "/image18.webp",
         "/image9.webp",

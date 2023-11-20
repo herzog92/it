@@ -1,5 +1,8 @@
 import React from 'react';
 import './Footer.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+
 
 function Footer() {
     return (
@@ -11,7 +14,14 @@ function Footer() {
                     <span>Postanschrift : Luitpold str 11.  92637 Weiden</span>
                     <span>Telefonnummer:+49 176 76707335 </span>
                     
+                    
                 </div>
+                <div className="footer-section social-media-section">
+                    <h4>Folgen Sie uns</h4>
+                    <a href="https://www.facebook.com/profile.php?id=61553730392193" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faFacebook} />
+                    </a>
+                    </div>
                 <div className="footer-section">
                     <h4>Anlässe</h4>
                     <span>Sommerfest</span>

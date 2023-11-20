@@ -32,6 +32,23 @@
 .footer-section span {
     font-size: 20px;
 }
+.social-media-section .fa-facebook {
+    font-size: 24px; /* Or your desired size */
+    color: #3b5998; /* Facebook color */
+    margin-right: 10px;
+  }
+  
+  .social-media-section a {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  /* You may add :hover and :focus styles for better user experience */
+  .social-media-section a:hover,
+  .social-media-section a:focus {
+    text-decoration: none;
+    opacity: 0.8;
+  }
 
 /* Media Queries */
 

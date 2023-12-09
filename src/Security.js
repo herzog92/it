@@ -17,7 +17,7 @@ function Security() {
     },
     {
       id: 3,
-      title: "Flexibilität und Partnerschaft",
+      title: "Flexibilität ",
       text: "Wir stuationen animieren."
     }
     // ... Vous pouvez ajouter plus d'objets ici

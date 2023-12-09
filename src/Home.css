@@ -1,152 +1,133 @@
 /* Styles généraux */
 .home-container {
     display: flex;
+    overflow-x: hidden;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
     padding: 50px;
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
-.section {
+.acceuil, .section1, .section2, .section3, .section5 {
+    background-color: rgb(7, 7, 39) ;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     width: 100%;
+}
+
+.acceuil {
+    height: 750px;
+    
+}
+  
+.sectiona2{
+    display: flex;
+    flex-direction: row     ;
+    align-items: center;
+    margin-top: 20px;
+    background-color: rgb(7, 7, 39);
+    
+}
+.sectiona3{
+    display: flex;
+    flex-direction: row    ;
+    align-items: center;
+    margin-top: 20px;
+    background-color:rgb(7, 7, 39);
+    
+}
+
+/*la section photo et text*/
+.sectiona1{
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: 100%;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color:white;
 }
-
-.section1-img, .section2 img, .section3 img {
-    width: 50%;
-    margin-bottom: 50px;
-}
-
-.section1 {
-    background-color: white;
-    color: black;
-    text-align: left;
-}
-
-.section2 {
-    background-color: black;
-    color: #ffcc00;
-    text-align: left;
-}
-.section3 {
-    background-color: white;
-    color: black;
-    text-align: right;
-}
-.section1-text, .section2-text, .section3-text {
-    padding: 3rem;
-    width: 50%;
+.sectiona3-text,
+.sectiona1-text,
+.sectiona2-text{
+   color: rgb(7, 165, 139);
+    padding: 2rem;
+    width: 100%;
     text-align: left;
     margin-bottom: 80px;
-    line-height: 2.5;
+    line-height: 2;
     font-size: 18px;
 }
 
-/* Styles pour la section 4 - défilement des images */
-.section4 {
+.sectiona1-img{
     width: 100%;
+    margin-bottom: 50px;
+}
+
+
+
+.sectiona8 {
+    background-color: antiquewhite;
+    width: 95%;
     overflow: hidden;
+    margin-top: 20px;
+  }
+  
+  .image-slider {
+    animation: slide 10s linear infinite;
+    scroll-behavior: smooth;
+    display: flex; /* Affichage en ligne des images */
+    gap: 10px; /* Espace entre les images */
+  }
+  .image-slider img {
+    width: auto; /* Largeur automatique pour maintenir les proportions */
+    height: 100px; /* Hauteur fixe ou ajustable selon le besoin */
+    object-fit: contain; /* Assure que l'image est entièrement visible */
 }
-
-.image-slider {
-    display: flex;
-    animation: slide 50s linear infinite;
-}
-
-.section4 img {
-    flex: 0 0 calc(25% - 10px);
+  .section4 img {
+    flex: 0 0 auto;
     max-width: calc(25% - 10px);
-    height: 250px;
+    height: 350px;
     margin-right: 10px;
     object-fit: cover;
-}
+  }
+  
+  @keyframes slide {
+    from { transform: translate3d(0, 0, 0); }
+    to { transform: translate3d(-50%, 0, 0); } /* Assurez-vous que cela correspond à la largeur totale des images dupliquées */
 
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-/* Styles pour la section 5 */
-.section5-text {
-    padding: 3rem;
-    text-align: center;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: .15em solid black;
-    width: 0;
-    animation: typing 14s steps(40, end) infinite, blink-caret .75s step-end infinite;
-}
-
-.section5 {
-    background-color: black;
-    color: #ffcc00;
-}
-
-@keyframes typing {
-    0% { width: 0 }
-    28% { width: 100% }
-    100% { width: 100% }
-}
-
-@keyframes blink-caret {
-    50% { border-color: transparent; }
-}
-
-.section3 {
-    display: flex;
-    flex-direction: row;
-    align-items: center ;
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 20px;
-    text-align: right;
-}
-
-.section3 img {
-    width: 50%;
-    margin-right: 10px;
-}
-
-.section3-text {
-    width: 50%;
-    text-align: left;
-    padding: 3rem;
-}
-
+  }
+  
 /* Styles responsive pour les écrans plus petits */
 @media (max-width: 768px) {
     .home-container {
         padding: 10px;
     }
 
-    .section1-text, .section2-text, .section3-text,.section5-text {
-        padding: 0.5rem;
-        margin-bottom: 15px;
-        width: 100%;
-    }
-
-    .section1-img, .section2 img, .section3 img {
-        width: 100%;
-        margin-bottom: 10px;
-        margin-right: 0;
-    }
-
-    .section {
-        flex-direction: column;
-    }
-
+    /*pour le defilement
     .section4 img {
         width: 100%;
         margin-right: 0;
     }
+*/
+    .sectiona2,
+    .sectiona3,
+    .sectiona1 {
+        flex-direction: column;
+    }
+
+    .sectiona1-img
+    .sectiona2-img{
+        margin-bottom: 10px;
+    }
+    .sectiona3-text
+    .sectiona1-text
+    .sectiona2-text{
+        padding: 0.5rem;
+        margin-bottom: 15px;
+    }
+      
 }

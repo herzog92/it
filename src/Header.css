@@ -1,7 +1,7 @@
 .app-header {
-  background-color: #000;
+  background-color: rgb(7, 7, 39);
   padding: 1px 0;
-  color: #0fa6ec;
+  color: rgb(7, 165, 139);
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: space-between;
@@ -15,8 +15,9 @@
 }
 
 .logo-image {
-  height: 120px;
-  width: auto;
+  height: auto; /* Adjust height automatically */
+    max-width: 200px; /* Set maximum width for the logo image */
+    width: auto; /* Adjust width automatically */
 }
 
 nav ul {
@@ -32,7 +33,7 @@ nav ul li {
 }
 
 nav ul li a, nav ul li span {
-  color:#0fa6ec;
+  color:rgb(7, 165, 139);
   display: inline-block;
   padding: 10px 25px;
   transition: transform 0.3s, background-color 0.3s;
@@ -69,7 +70,7 @@ nav ul .dropdown.show {
   display: none;
   background: #000;
   border: none;
-  color: #0fa6ec;
+  color: rgb(7, 165, 139);
   font-size: 34px;
   cursor: pointer;
 }
@@ -87,22 +88,31 @@ nav ul .dropdown.show {
   nav.active {
       display: block;
   }
+  nav ul li a, nav ul li span {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    padding: 8px 20px; /* Adjust padding for smaller screens */
+  }
 
   nav ul {
-      flex-direction: column;
+    flex-direction: column;
+    width: 100%; /* Full width */
+    align-items: center; /* Center align the nav items */
       gap: 10px;
-      align-items: flex-end;
+      
   }
 
   nav ul .dropdown {
-      position: relative;
-      top: auto;
-      left: auto;
+    position: static; /* Use static instead of absolute */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width calculation */
       background: transparent;
       border: none;
   }
 
   .menu-toggle {
       display: block;
+  }
+  .menu-toggle.open {
+    display: block;
   }
 }

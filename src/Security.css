@@ -1,0 +1,80 @@
+/*section arrondi tout cette page si*/
+.grandrectanglea-02 {
+    background-color: rgb(230, 219, 219);
+}
+
+.rectanglea-02 {
+    background-color: rgb(7, 7, 39);
+    display: flex;
+    flex-direction: row; /* flex-direction initial */
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 100px;
+    width: 90%;
+    height: 400px; /* Hauteur fixe peut être problématique pour les petits écrans */
+    margin-left: 30px;
+    overflow: hidden;
+}
+
+.image-containera {
+    flex: 1; /* Ajuste la taille du conteneur de l'image */
+    overflow: hidden; /* Empêche le débordement de l'image */
+}
+
+
+.image-containera img {
+    width: 100%; /* Fait en sorte que l'image occupe toute la largeur de son conteneur */
+    max-width: 90%;
+    height: auto; /* Maintient le ratio de l'image */
+    object-fit: cover; /* S'assure que l'image couvre la zone sans être étirée */
+}
+
+.text-containera {
+    margin-right: 30px;
+    color: rgb(7, 165, 139);
+    text-align: left;
+    
+    flex: 1; /* Ajuste la taille du conteneur de texte */
+    width: 50%; /* Vous pourriez vouloir l'ajuster pour les petits écrans */
+}
+.image-containera img:hover {
+    transform: rotate(10deg); /* Rotation de 10 degrés */
+    transition: transform 0.3s ease-in-out; /* Animation fluide */
+  }
+  .text-containera:hover {
+    background-color: lightblue; /* Change la couleur de fond */
+    transition: background-color 0.3s ease-in-out; /* Animation fluide */
+  }
+  
+@media (max-width: 760px) {
+    .rectanglea-02 {
+        flex-direction: column;
+        width: 100%; /* Assure que le conteneur ne dépasse pas la largeur de l'écran */
+        height: auto; /* Permet au conteneur de s'ajuster à son contenu */
+        margin-left: 0; /* Réduit la marge gauche */
+        border-radius: 50px; /* Rayon plus petit pour les petits écrans */
+    }
+
+    .text-containera, .image-containera {
+        margin: 0;
+        width: 100%;
+        padding: 10px; /* Ajoute un peu de padding pour l'espace */
+    }
+
+    .text-containera {
+        font-size: 14px; /* Taille de police adaptée pour les petits écrans */
+    }
+
+    .image-containera img {
+        max-width: 100%; /* Assure que l'image ne dépasse pas la largeur du conteneur */
+        height: auto; /* Ajuste la hauteur pour maintenir le ratio */
+        object-fit: contain; /* Assure que l'intégralité de l'image est visible */
+    }
+}
+
+@media (min-width: 2001px) {
+    .rectanglea-02 {
+        flex-direction: row;
+        margin-top: 30px;
+    }
+}

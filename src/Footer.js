@@ -5,33 +5,35 @@ function Footer() {
     return (
         <div className="footer">
             <div className="footer-content">
+                {/* Section de contact */}
                 <div className="footer-section">
                     <h4>Kontakt</h4>
-                    <span>Email:  geschaeftsfuerung.ug@gmail.com </span>
-                    <span>Postanschrift : Luitpold str 11.  92637 Weiden</span>
-                    <span>Telefonnummer:+49 176 76707335 </span>
-                    
+                    <span>Email: astrid.thom1@gmx.de</span>
+                    <span>Email: herzogmoffo@gmail.com</span>
+                    <span>Postanschrift: Bessemerstr 9, 90411 Nürnberg</span>
+                    <span>Telefonnummer: +49 176 43546046</span>
+                    <span>oder: +49 15223755363</span>
                 </div>
+                
+                {/* Section de services */}
                 <div className="footer-section">
-                    <h4>Anlässe</h4>
-                    <span>Sommerfest</span>
-                    <span>Teambuilding</span>
-                    <span>Tagungspause</span>
-                    <span>Kick-off</span>
-                    <span>Jubiläumsfeier</span>
-                    <span>Weihnachtsfeier</span>
+                    <h4>Dienstleistungen</h4>
+                    <ul>
+                        <li>Netzwerk Spezialist</li>
+                        <li>IT Administrator Spezialist</li>
+                        <li>Netzwerk Sicherheit mit Firewall</li>
+                        <li>Netzwerk Sicherheit mit BSI Grundschutz</li>
+                        <li>Netzwerksicherheit mit Pentest nach BSI Grundschutz</li>
+                        <li>Cloud Computing</li>
+                        <li>Cloud Computing und Datenschutz</li>
+                    </ul>
                 </div>
+                
+                {/* Section des heures d'ouverture */}
                 <div className="footer-section">
                     <h4>Öffnungszeiten</h4>
                     <span>Montag-Freitag</span>
-                    <span>von 7 bis 20uhr</span>
-                    
-                </div>
-                <div className="footer-section">
-                    <h4>Themen</h4>
-                    <span>Team Event</span>
-                    <span>Indoor Event</span>
-                    <span>Outdoor Event</span>
+                    <span>von 7 bis 20 Uhr</span>
                 </div>
             </div>
         </div>

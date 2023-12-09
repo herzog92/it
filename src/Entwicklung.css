@@ -1,0 +1,307 @@
+/* Ajoutez ces styles pour éviter le défilement horizontal */
+.Entwicklung-page{
+  overflow-x: hidden;
+  margin: 0;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+ 
+}
+
+/* Section specific styles */
+.container001 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(7, 7, 39);
+  margin: 1rem 5%;
+  flex-direction: row-reverse;
+  width: 100%;
+  padding: 2rem;
+ 
+
+}
+
+.section001-image{
+  flex: 1;
+  background-color: white;
+  object-fit: cover;
+  width: 100%;
+  overflow: hidden;
+  flex-wrap: wrap;
+  height: auto;
+  max-width: 100%;
+  
+}
+.section001-image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Text within sections */
+.section001-text {
+  padding: 2rem;
+  flex: 1;
+  overflow: hidden;
+  line-height: 2.5;
+  color:rgb(7, 165, 139);
+  font-size: 1rem; /* Utiliser 'rem' pour la taille de police */
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.slider{
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 800px;
+}
+.slide {
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  height: auto; /* Ajustez la hauteur selon vos besoins */
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  
+}
+.caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+  color: blue;
+  padding: 20px;
+  text-align: center;
+}
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color:rgb(255, 255, 255);
+}
+
+.carousel .prev-button {
+  left: 15px;
+  background-color: green;
+}
+
+.carousel .next-button {
+  right: 15px;
+  background-color: green;
+}
+
+
+.section0021-text {
+  padding: 3rem;
+  color: rgb(7, 165, 139);
+  text-align: center;
+  background-color: rgb(7, 7, 39);
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: .15em solid black;
+  animation: typing 14s steps(40, end) infinite, blink-caret .75s step-end infinite;
+}
+
+.section001-style {
+  background-color: rgb(218, 207, 207);
+  padding: 100px;
+  transform: skewY(-2deg);
+  transform-origin: bottom left;
+  margin: 100px;
+  overflow: hidden;
+  color: 0000;
+}
+
+.section001-style::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to left bottom, transparent 20%, #009fd4);
+  transform: skewY(-2deg);
+  transform-origin: bottom left;
+  height: 100px;
+}
+
+.container002 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(2, 2, 34);
+  margin: 80px 5%;
+  flex-direction: row-reverse;
+  overflow: hidden;
+}
+.container003 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(2, 2, 34);
+  margin: 80px 5%;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.Entwicklung-section01{
+  background-color: rgb(7, 165, 139);
+}
+
+.process-steps-container001 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.process-icon001 {
+  background: rgb(7, 7, 39);
+  border-radius: 50%;
+  padding: 20px;
+  margin: 10px;
+  color: white;
+  text-align: center;
+}
+
+
+/* Reset CSS */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Image slider in section 4 */
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Section 5 styles */
+.section5 {
+  background-color: #009fd4;
+  color: black;
+}
+
+/* Carousel styles */
+.test-container {
+  background-color: rgb(241, 239, 239);
+}
+
+
+/* Statistics container styles */
+.statistics-container {
+  background-color: rgb(7, 7, 39) !important;
+  color: black;
+  text-align: center;
+  padding: 50px 0 ;
+}
+
+.stats .stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.circle {
+  background-color: rgb(7, 7, 39) white;
+  color: #009fd4;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Skewed section styles */
+@media (min-width: 2001px) {
+  .Entwicklung-container001,
+  .container001{
+    flex-direction: row;
+  }
+}
+
+/* Écrans moyens */
+@media (max-width: 2000px) {
+  .Entwicklung-container001,
+  .container001,
+  .container002,
+  .container003{
+    flex-direction: row;
+    padding: 10px;
+    margin: 5px;
+    justify-content: space-between;
+  }
+ 
+  .container002{
+    flex-direction: row-reverse;
+    padding: 10px;
+    margin: 5px;
+    justify-content: space-between;
+  }
+
+  .section001-image{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Écrans petits et moyens */
+@media (max-width: 768px) {
+  .Entwicklung-container001,
+  .Entwicklung-section01,
+  .container001,
+  .container002,
+  .container003 {
+    flex-direction: column;
+    padding: 5px;
+    margin: 2px;
+    justify-content: space-between;
+  }
+ 
+  .section001-text, .section001-image {
+    width: 100%;
+    text-align: center;
+    flex-basis: 100%;
+    flex: 1;
+    margin-right: 0;
+    padding: 1rem;
+    font-size: 15px;
+  }
+
+  .section0021{
+    padding: 1px;
+    overflow: hidden;
+    font-size: 10px;
+  }
+  .section001-style{
+    padding: 10px;
+    overflow: hidden;
+    font-size: 14px;
+  }
+}

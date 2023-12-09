@@ -34,6 +34,7 @@
   align-items: center;
   padding: 10px 300px;
   overflow: hidden;
+ 
 }
 
 .rectangle-container {
@@ -44,22 +45,25 @@
   flex-wrap: wrap;
   overflow: hidden;
   height: auto;
+  margin: 10px;
+  padding: 10px;
 }
 
 .rectangle {
-  background-color: rgb(14, 9, 9) !important;
+  background-color: rgb(7, 7, 39) !important;
   border: none !important;
   border-radius: 50px !important;
-  width: 290px;
+  width: 400px;
   height: auto;
   flex-direction: column;
   margin: 10px;
   transition: transform 0.3s ease;
+  overflow: hidden;
   
 }
 
 .rectangle h2 {
-  color: goldenrod;
+  color: rgb(7, 165, 139);
   margin-left: 30px;
   margin-bottom: 10px;
   font-size: 1.2em;
@@ -68,10 +72,11 @@
 }
 
 .rectangle p {
-  color: #0fa6ec;
+  color: rgb(7, 165, 139);
   margin-top: 0;
   font-size: 0.9em;
   line-height: 1.8;
+  margin:20px ;
 }
 
 /* Section 3 */
@@ -245,8 +250,6 @@ font-size: 1em;
   cursor: pointer;
 }
 
-/* Section 5: Carrousel */
-/* Additional styles for carousel as needed */
 
 /* Responsive Design for Carousel */
 .carousel-item1 {

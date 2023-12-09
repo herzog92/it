@@ -1,0 +1,223 @@
+.statistics-container {
+    background-color: #009fd4; /* Blue background */
+    color: white; /* White text */
+    text-align: center; /* Center text */
+    padding: 50px 0; /* Padding at top and bottom */
+  }
+  
+  .stats {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    gap: 30px; /* Space between items */
+    padding: 20px 0; /* Padding at top and bottom */
+  }
+  
+  .stat-item {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Align items in the center */
+  }
+  
+  .circle {
+    background-color: white; /* White background for the circle */
+    color: #009fd4; /* Blue text */
+    border-radius: 50%; /* Make it round */
+    width: 100px; /* Width of the circle */
+    height: 100px; /* Height of the circle */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    font-size: 1.5em; /* Font size of the number */
+    margin-bottom: 10px; /* Space below the circle */
+  }
+  
+  .carousel {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    position: relative; /* Position relative for absolute children */
+  }
+  
+  .prev-button, .next-button {
+    background: none; /* No background */
+    border: none; /* No border */
+    color: white; /* White arrows */
+    font-size: 2em; /* Size of arrows */
+    cursor: pointer; /* Pointer cursor on hover */
+    position: absolute; /* Position them absolutely */
+  }
+  
+  .prev-button {
+    left: 10px; /* Position from the left */
+  }
+  
+  .next-button {
+    right: 10px; /* Position from the right */
+  }
+  
+  .slider {
+    overflow: hidden; /* Hide the overflow */
+    width: 100%; /* Full width */
+  }
+  
+  .slide {
+    opacity: 0; /* Hide inactive slides */
+    transition: opacity 0.5s ease; /* Animate the opacity */
+    position: absolute; /* Position absolutely */
+    width: 100%; /* Slide width */
+  }
+  
+  .slide.active {
+    opacity: 1; /* Show active slide */
+    position: relative; /* Position relative for stacking */
+  }
+  
+  .slide img {
+    width: 100%; /* Full width images */
+    display: block; /* Block level for no spacing */
+  }
+  
+  .caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white; /* White text */
+    padding: 10px; /* Padding */
+    text-align: center; /* Center text */
+    position: absolute; /* Position absolutely */
+    bottom: 0; /* At the bottom of the slide */
+    width: 100%; /* Full width */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .stats {
+      flex-direction: column; /* Stack stats items vertically on small screens */
+    }
+    .prev-button, .next-button {
+      font-size: 1.5em; /* Smaller arrows on small screens */
+    }
+  }
+  
+
+  .penetration-testing-section {
+    font-family: Arial, sans-serif;
+    color: #333; /* Ou une autre couleur appropriée */
+    max-width: 1200px; /* Ou la largeur que vous préférez */
+    margin: 0 auto; /* Centrer la section dans la page */
+    padding: 20px;
+  }
+  
+  .penetration-testing-section h2 {
+    color: #007bff; /* Couleur du titre */
+    margin-bottom: 20px;
+  }
+  
+  .penetration-testing-section p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .penetration-testing-section ul {
+    list-style-type: none; /* Retire les puces par défaut */
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  
+  .penetration-testing-section ul li::before {
+    content: '✔'; /* Ajoute un caractère de puce personnalisé */
+    color: #007bff; /* Couleur de la puce */
+    margin-right: 10px;
+  }
+  
+  .process-steps {
+    display: flex;
+    justify-content: space-around; /* Espacement égal entre les étapes */
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .process-steps .step {
+    text-align: center;
+  }
+  
+  .process-steps .step .icon {
+    /* Ajoutez vos styles pour les icônes ici. Exemple: */
+    width: 60px; /* Taille de l'icône */
+    height: 60px; /* Taille de l'icône */
+    margin-bottom: 10px;
+    background-color: #007bff; /* Couleur de fond de l'icône */
+    border-radius: 50%; /* Rend l'icône circulaire */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style pour les appareils mobiles */
+  @media (max-width: 768px) {
+    .process-steps {
+      flex-direction: column;
+    }
+  }
+  .process-steps-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .process-step {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .process-icon {
+    background-color: #007bff;
+    border-radius: 50%;
+    width: 50px; /* Ajustez selon la taille souhaitée pour les icônes */
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; /* Ajustez selon la taille souhaitée pour les numéros */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .process-arrow {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #007bff;
+    position: relative;
+  }
+  
+  .process-arrow::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -5px; /* Centre la pointe de la flèche verticalement */
+    border-top: 7px solid transparent; /* Ajustez la taille pour modifier la hauteur de la flèche */
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid #007bff; /* Ajustez la largeur pour modifier la largeur de la flèche */
+  }
+  
+  /* Ajustement pour les petites résolutions */
+  @media (max-width: 600px) {
+    .process-steps-container {
+      flex-direction: column;
+    }
+    .process-arrow {
+      width: 2px;
+      height: 50px; /* Ajustez selon l'espacement vertical souhaité */
+      margin-bottom: 20px;
+    }
+    .process-arrow::after {
+      top: 40px; /* Ajustez pour aligner la pointe avec le bord inférieur du connecteur */
+      right: -5px; /* Centre la pointe de la flèche horizontalement */
+      border-top: 10px solid #007bff; /* Ajustez la hauteur pour modifier la largeur de la flèche */
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-bottom: none;
+    }
+  }
+  

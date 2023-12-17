@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Home.css';
 
 function Home() {
@@ -14,6 +14,30 @@ function Home() {
         "/image6.webp",
         "/image7.webp",
     ];
+
+    const Counter = ({ target, duration }) => {
+        const [count, setCount] = useState(0);
+    
+        useEffect(() => {
+          let frame;
+          const startTimestamp = performance.now();
+    
+          const step = (timestamp) => {
+            if (!frame) frame = requestAnimationFrame(step);
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            setCount(Math.floor(progress * (target - 0) + 0));
+            if (progress < 1) {
+              frame = requestAnimationFrame(step);
+            }
+          };
+    
+          requestAnimationFrame(step);
+    
+          return () => cancelAnimationFrame(frame);
+        }, [target, duration]);
+    
+        return <div className="circle">{count}</div>;
+      };
 
     const text = "Warum Sie sich für uns entscheiden sollten.";
 
@@ -60,6 +84,20 @@ function Home() {
                     ))}
                 </div>
             </div>
+
+
+            <div className="statistics-container1">
+          <h2>Das bestätigt unsere Erfolgsgeschichte</h2>
+          <p>Täglich vertrauen Kunden auf unsere herausragende Expertise im Eventmanagement.</p>
+          <div className="stats">
+            <div className="stat-item">
+              <Counter target={158} duration={2000} />
+              <p>Erfolgreich durchgeführte Events</p>
+            </div>
+            
+            
+          </div>
+        </div>
         </div>
     );
 }

@@ -1,0 +1,152 @@
+/* Styles généraux */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.section1-img, .section2 img, .section3 img {
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.section1 {
+    background-color: white;
+    color: black;
+    text-align: left;
+}
+
+.section2 {
+    background-color: black;
+    color: #ffcc00;
+    text-align: left;
+}
+.section3 {
+    background-color: white;
+    color: black;
+    text-align: right;
+}
+.section1-text, .section2-text, .section3-text {
+    padding: 3rem;
+    width: 50%;
+    text-align: left;
+    margin-bottom: 80px;
+    line-height: 2.5;
+    font-size: 18px;
+}
+
+/* Styles pour la section 4 - défilement des images */
+.section4 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-slider {
+    display: flex;
+    animation: slide 50s linear infinite;
+}
+
+.section4 img {
+    flex: 0 0 calc(25% - 10px);
+    max-width: calc(25% - 10px);
+    height: 350px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Styles pour la section 5 */
+.section5-text {
+    padding: 3rem;
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid black;
+    width: 0;
+    animation: typing 14s steps(40, end) infinite, blink-caret .75s step-end infinite;
+}
+
+.section5 {
+    background-color: black;
+    color: #ffcc00;
+}
+
+@keyframes typing {
+    0% { width: 0 }
+    28% { width: 100% }
+    100% { width: 100% }
+}
+
+@keyframes blink-caret {
+    50% { border-color: transparent; }
+}
+
+.section3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.section3 img {
+    width: 50%;
+    margin-right: 10px;
+}
+
+.section3-text {
+    width: 50%;
+    text-align: left;
+    padding: 3rem;
+}
+
+/* Styles responsive pour les écrans plus petits */
+@media (max-width: 768px) {
+    .home-container {
+        padding: 10px;
+    }
+
+    .section1-text, .section2-text, .section3-text,.section5-text {
+        padding: 0.5rem;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .section1-img, .section2 img, .section3 img {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .section {
+        flex-direction: column;
+    }
+
+    .section4 img {
+        width: 100%;
+        margin-right: 0;
+    }
+}

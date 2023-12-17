@@ -1,0 +1,43 @@
+/* About.css */
+
+.about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0; /* Espacement au-dessus et en dessous de la page */
+}
+
+.about-section {
+    width: 90%; /* Prend 90% de la largeur de l'écran */
+    background-color: #000040; /* Fond noir pour chaque section */
+    border: 3px solid white; /* Ligne de contour en blanc */
+    border-radius: 20px; /* Coins légèrement arrondis */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px 50px;
+    margin: 20px 0;
+    border-radius: 60px;
+    
+}
+
+.section-image, p {
+    transition: transform 0.3s; /* Transition douce pour le survol */
+}
+
+.section-image:hover, p:hover {
+    transform: scale(1.05); /* Agrandit légèrement l'élément survolé */
+}
+
+.section-image {
+    width: 30%; /* taille maniable */
+    border-radius: 10px;
+}
+
+p {
+    color: gold; /* Texte en doré */
+    font-size: 16px;
+    margin-left: 20px;
+    flex: 1; /* permet au texte de prendre tout l'espace restant */
+}

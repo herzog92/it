@@ -1,0 +1,133 @@
+/* Variables */
+:root {
+    --footer-column-gap: 40px; /* Espace par défaut entre les colonnes */
+}
+
+.footer {
+    background-color: #000; 
+    padding: 20px 0;
+    color: #0fa6ec; 
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: var(--footer-column-gap); /* Utilise l'espacement défini par la variable */
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.footer-section span {
+    font-size: 20px;
+}
+.social-media-section .fa-facebook {
+    font-size: 24px; /* Or your desired size */
+    color: #3b5998; /* Facebook color */
+    margin-right: 10px;
+  }
+  
+  .social-media-section a {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  /* You may add :hover and :focus styles for better user experience */
+  .social-media-section a:hover,
+  .social-media-section a:focus {
+    text-decoration: none;
+    opacity: 0.8;
+  }
+
+/* Media Queries */
+
+/* Écrans moyens (tablette) */
+@media only screen and (max-width: 768px) {
+    :root {
+        --footer-column-gap: 15px; /* Réduit un peu l'espacement pour les écrans moyens */
+    }
+    .footer-section {
+        flex: 0 0 50%; /* Prend 50% de la largeur de l'écran */
+    }
+}
+
+/* Écrans petits (mobile) */
+@media only screen and (min-width: 201px) and (max-width: 480px) {
+    :root {
+        --footer-column-gap: 10px; /* Réduit davantage l'espacement pour les petits écrans */
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-section {
+        flex: 1;
+        margin-bottom: 15px;
+    }
+    .footer-section span {
+        font-size: 18px; /* Ajuste la taille du texte pour les petits écrans */
+    }
+}
+.footer-section h4 {
+    color: goldenrod; /* Couleur du texte des titres */
+    font-size: 24px; /* Taille du texte des titres */
+    margin-bottom: 10px; /* Espace sous le titre */
+    font-weight: 500; /* Épaisseur du texte des titres */
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    :root {
+        --footer-column-gap: 15px; /* Réduit un peu l'espacement pour les écrans moyens */
+    }
+    .footer-section {
+        flex: 0 0 50%; /* Prend 50% de la largeur de l'écran */
+    }
+}
+@media only screen and (max-width: 200px) {
+    :root {
+        --footer-column-gap: 5px; /* Espace très réduit pour les écrans très petits */
+    }
+    .footer-content {
+        padding: 0 5px;
+    }
+    .footer-section {
+        flex: 0 0 100%; /* Prend 100% de la largeur de l'écran */
+        margin-bottom: 10px;
+    }
+    .footer-section span, .footer-section h4 {
+        font-size: 16px; /* Réduit la taille du texte pour les écrans très petits */
+    }
+}
+/* ... styles existants ... */
+
+/* Écrans très larges */
+@media only screen and (min-width: 2001px) {
+    .footer-content {
+        padding: 0 30px; /* Augmenter le padding si nécessaire */
+        gap: var(--footer-column-gap); /* Vous pouvez augmenter l'espacement si nécessaire */
+    }
+
+    .footer-section {
+        /* Ajustements optionnels pour les sections, comme augmenter la taille de base */
+        flex: 0 0 calc(25% - var(--footer-column-gap)); /* Chaque section prend environ 25% de l'espace, en comptant l'espacement */
+    }
+
+    .footer-section h4 {
+        font-size: 36px; /* Augmenter la taille de la police pour les grands écrans */
+    }
+
+    .footer-section span {
+        font-size: 24px; /* Augmenter la taille de la police pour les grands écrans */
+    }
+}
+
+/* ... autres requêtes médias ... */

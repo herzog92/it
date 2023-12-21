@@ -33,11 +33,15 @@
     font-size: 20px;
 }
 .social-media-section .fa-facebook {
-    font-size: 24px; /* Or your desired size */
-    color: #3b5998; /* Facebook color */
+    font-size: 40px; /* Or your desired size */
+    color: #53568a ;/* Facebook color */
     margin-right: 10px;
   }
-  
+  .social-media-section .fa-instagram {
+    font-size: 40px; /* Or your desired size */
+    color: #525312 ;/* Facebook color */
+    margin-right: 10px;
+  }
   .social-media-section a {
     display: inline-block;
     margin-top: 10px;

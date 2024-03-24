@@ -18,7 +18,7 @@ function Management() {
                 <div className="rectangle03">
                     
                     <div className="image-container">
-                        <img src="image11.jpg" alt="Management" />
+                        <img src="image11.webp" alt="Management" />
                     </div>
                     <div className="text-container">
                         <div className="column">
